@@ -118,13 +118,13 @@ knitr::kable(Maletop10in106)
 
 
 ### 哪些行業女生薪資比男生薪資多? 
-filter(X103,`大學-女/男`>100)
+
 #103年
 #篩選女生比男生的比率大於100的資料
 Femalehigher103<-filter(X103,`大學-女/男`>100)%>% arrange(`大學-女/男`)
 #取出前10筆資料
 Femaletop10in103<-head(Malehigher103,10)
-Femaletop10in103
+knitr::kable(Femaletop10in103)
 #104年
 #篩選女生比男生的比率大於100的資料
 Femalehigher104<-filter(X104,`大學-女/男`>100)%>% arrange(`大學-女/男`)
